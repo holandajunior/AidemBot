@@ -8,7 +8,7 @@ config.telegram = {
 config.spotify = {
 	'CLIENT_ID': process.env.AIDEM_CLIENT_ID,
 	'CLIENT_SECRET': process.env.AIDEM_CLIENT_SECRET,
-	'REDIRECT_URI': 'https://aidem-bot.herokuapp.com/spotify_cb',
+	'REDIRECT_URI': process.env.AIDEM_REDIRECT_URL,
 	'STATE': 'aidem_bot_state',
 	'SCOPES': ['playlist-read-private', 'user-read-private', 'user-read-email']
 }
