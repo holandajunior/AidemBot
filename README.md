@@ -25,10 +25,14 @@ AidemBot is a Nodejs app. Then, after you have pulled its code, install all requ
 $ npm install
 ```
 
+### Running server
+
+We use the Heroku platform to serve the webservice located in `server` folder. However, feel free to use any host.
+
 
 ### Config
 
-Since we need a Telegram and Spotify tokens and other configurations stuff, you must update the *config.js* file in root folder. Just to organize the development, it is better do not use the main Telegram and Spotify tokens shared with all contributors, so you need to create your own Tokens to develop your improvements and contribute with the project sending a PR.
+Since we need a Telegram and Spotify tokens and other configurations stuff, you must update the *config.js* file in root folder. Just to organize the development, it is better do not share the main Telegram and Spotify tokens with all contributors, so you need to create your own TOKEN (Telegram) and CLIENT SECRET (Spotify) to develop your improvements and contribute with the project.
 
 
 ## Folder structure
@@ -44,4 +48,4 @@ We have four main folders:
 ## Contributing
 
 Feel free to contribute with your code and tech skills to make Aidem so smart.
-Please, take a look at "Projects" tab to check the opened task out there and get anyone that you feel confortable to doing it so. You can also open issues and improvements that you want to.
+Please, take a look at "Projects" tab to check the opened task out there and get anything that you feel comfortable to do it so. You can also open issues and improvements that you want to
