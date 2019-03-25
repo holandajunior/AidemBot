@@ -45,6 +45,46 @@ We have four main folders:
 `lang`: the internationalization stuff. </br>
 
 
+## Features
+
+### Music commands
+
+We are continously creating more features and commands. To interact with AidemBot, type in the following commands in the chat:
+
+`spotify`: log in spotify. To use spotify features, you first need to log in </br>
+```
+/spotify
+``` 
+</br>
+
+`lastplaylists`: it shows the 2 last playlists in your library
+```
+/lastplaylists
+``` 
+
+</br>
+
+`myplaylists`: it shows N playlists in your library
+```
+/myplaylists [1-9]+
+``` 
+
+</br>
+
+`artist`: get artist by name
+```
+/artist [\wà-úÀ-Ú\-\sçÇ]+
+``` 
+
+</br>
+
+`recommend`: recommend tracks and artists based on a artist's name
+```
+/recommend [\wà-úÀ-Ú\-\sçÇ]+
+``` 
+
+
+
 ## Contributing
 
 Feel free to contribute with your code and tech skills to make Aidem so smart.
