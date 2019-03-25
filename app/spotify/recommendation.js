@@ -27,7 +27,7 @@ class SpotifyRecommendation extends SpotifyBase {
 					console.log(data);
 
 					let tracks = data.body.tracks;
-					tracks = this._getMainMidiasData( tracks );
+					tracks = this._getMainMediasData( tracks );
 					resolve(tracks);
 
 				} ).catch( ( err ) => {

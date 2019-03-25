@@ -7,7 +7,7 @@ class AidemBot extends TelegramBot {
 	}
 
 	// data: [ { title: ..., spotify_urlopen } ] 
-	sendManyMidiaMessage(chatId, data) {
+	sendManyMediaMessage(chatId, data) {
 
 		data.forEach( ( item ) => {
 
@@ -19,7 +19,7 @@ class AidemBot extends TelegramBot {
 	}
 
 	// data: { title: ..., spotify_urlopen } 
-	sendMidiaMessage(chatId, data) {
+	sendMediaMessage(chatId, data) {
 
         const text = `${data.title}  ${data.spotify_urlopen}`;
         this.sendMessage(chatId, text);

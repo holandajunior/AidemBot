@@ -16,7 +16,7 @@ class SpotifySearch extends SpotifyBase {
 
 				console.log(data.body);
 
-				results = this._getMainMidiasData( results );
+				results = this._getMainMediasData( results );
 
 				resolve(results); 
 			  

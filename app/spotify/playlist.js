@@ -14,7 +14,7 @@ class SpotifyPlaylist extends SpotifyBase {
 
 				let playlists = data.body.items;
 
-				playlists = this._getMainMidiasData( playlists );
+				playlists = this._getMainMediasData( playlists );
 				resolve(playlists)
 
 			}, (err) => {

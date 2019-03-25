@@ -37,7 +37,7 @@ function listPlaylistsCallback( msg, match ) {
 
   spotify.playlist.getUserPlaylists(limit).then( ( playlists ) => {
 
-    bot.sendManyMidiaMessage(chatId, playlists);
+    bot.sendManyMediaMessage(chatId, playlists);
 
   } ).catch( ( err ) => {
     console.log("Error on getting user's playlist");
@@ -59,7 +59,7 @@ bot.onText(/\/artist ([\wà-úÀ-Ú\-\sçÇ]+)/, ( msg, match ) => {
   spotify.search.searchArtists(artistName).then( ( artists ) => {
 
     bot.sendMessage(chatId, lang.spotify.search.artist);
-    bot.sendManyMidiaMessage(chatId, artists);
+    bot.sendManyMediaMessage(chatId, artists);
 
   } ).catch( ( err ) => {
     console.log("Error on getting artists based on their name")
@@ -78,7 +78,7 @@ bot.onText(/\/recommend ([\wà-úÀ-Ú\-\sçÇ]+)/, ( msg, match ) => {
   spotify.recommendation.recommendByArtist(artistName).then( ( tracks ) => {
 
     bot.sendMessage(chatId, lang.spotify.recommend);
-    bot.sendManyMidiaMessage(chatId, tracks);
+    bot.sendManyMediaMessage(chatId, tracks);
 
   } ).catch( ( err ) => {
     console.log("Error on getting recommendations based on artist name")

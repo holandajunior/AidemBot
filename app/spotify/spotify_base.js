@@ -5,7 +5,7 @@ class SpotifyBase {
 		this.config = config;
 	}
 
-	_getMainMidiasData( data ) {
+	_getMainMediasData( data ) {
 
 		return data.map( ( item ) => {
 			
