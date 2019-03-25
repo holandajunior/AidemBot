@@ -35,10 +35,10 @@ Since we need a Telegram and Spotify tokens and other configurations stuff, you 
 
 We have four main folders:
 
-`bot`: this folder is about the bot itself. Here it has the bot commands and any other communication interface needed with the user in Telegram 
-`server`: this server is just to recevice any callbacks and other communications between the services if needed.
-`spotify`: here we have the whole spotify interface, providing any function the bot needs about music
-`lang`: the internationalization stuff
+`bot`: this folder is about the bot itself. Here it has the bot commands and any other communication interface needed with the user in Telegram. </br> 
+`server`: this server is just to recevice any callbacks and other communications between the services if needed. </br>
+`spotify`: here we have the whole spotify interface, providing any function the bot needs about music. </br> 
+`lang`: the internationalization stuff. </br>
 
 
 ## Contributing
